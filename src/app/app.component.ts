@@ -6,7 +6,6 @@ import { SubAppComponent } from './sub-app/sub-app.component'
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [DataProviderService]
 
 })
 export class AppComponent implements OnInit {

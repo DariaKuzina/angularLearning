@@ -1,4 +1,15 @@
 <div>
   <p>{{title}}</p>
-  <p>{{someDigit}}</p>
+ <ul>
+    <li *ngFor="let str of data, let i = index">
+      You got: {{str}}
+      <button (click)="delete(i)">x</button>
+    </li>
+ </ul>
+  <div>
+    <label for="newString">Enter new string</label>
+    <input id="newString" #str/>
+    <button (click)="addString(str.value)">Add</button>
+    <button (click)="clear()">Clear all</button>
+  </div>
 </div>
