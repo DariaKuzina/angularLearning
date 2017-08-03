@@ -6,12 +6,14 @@ import { LocalDataProviderService } from './local-data-provider.service'
 import { AppComponent } from './app.component';
 import { SubAppComponent } from './sub-app/sub-app.component';
 import { RndSubAppComponent } from './rnd-sub-app/rnd-sub-app.component';
+import { SelectWithBorderDirective } from './selectwithborder.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SubAppComponent,
-    RndSubAppComponent
+    RndSubAppComponent,
+    SelectWithBorderDirective
   ],
   imports: [
     BrowserModule
