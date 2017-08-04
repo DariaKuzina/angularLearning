@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export class SelectWithBorderDirective {
 
-  @Input() borderColor: string;
+  @Input('selectBorder') borderColor: string;
   private originalBorder;
   private el: HTMLElement;
 
